@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Kanit } from "next/font/google";
 import "./globals.css";
+import Header from "./header";
+import { LangParams } from "@/locales";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const kanit = Kanit({
+  weight: ["200", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -18,13 +14,14 @@ export const metadata: Metadata = {
     "Groupe ADC offre des services de consultation hôtelière pour la gestion, la conception et l’ouverture d’hôtels. Dirigé par Alain Darras, expert reconnu, nous accompagnons les hôteliers au Québec, en Ontario, en Alberta et au Nouveau-Brunswick avec des solutions stratégiques et conformes aux normes internationales.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+  params,
+}: React.PropsWithChildren<LangParams>) {
+  const { lang } = await params;
+
   return (
-    <html lang="en">
+    <html lang={lang}>
       <head>
         <link
           rel="icon"
@@ -42,9 +39,8 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="Groupe ADC" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${kanit.className} text-darkgray`}>
+        <Header lang={lang}></Header>
         {children}
       </body>
     </html>

@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-darkgray: #626366;
+  --color-lightgray: #ebebeb;
+  --color-grayred: #6c4444;
+  --color-red: #bf3633;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapped {
+  flex: 0 1 1300px;
+}

@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { Kanit } from "next/font/google";
 import "./globals.css";
 import Header from "./header";
-import { LangParams } from "@/locales";
+import { Locale } from "@/locales";
 
 const kanit = Kanit({
   weight: ["200", "400", "500", "600", "700"],
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -17,7 +18,10 @@ export const metadata: Metadata = {
 export default async function RootLayout({
   children,
   params,
-}: React.PropsWithChildren<LangParams>) {
+}: {
+  children: React.ReactNode;
+  params: Promise<{ lang: Locale }>;
+}) {
   const { lang } = await params;
 
   return (

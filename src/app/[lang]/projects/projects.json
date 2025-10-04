@@ -1,0 +1,38 @@
+[
+  {
+    "id": "quality-inn-sept-iles",
+    "name": {
+      "fr": "Quality Inn Sept-Îles",
+      "en": "Quality Inn Sept-Iles"
+    },
+    "description": {
+      "fr": "Construction et gestion de l’hôtel de 61 chambres ouvert en 2015.",
+      "en": "Construction and management of the 61-room hotel opened in 2015."
+    },
+    "imagesSrc": ["/assets/projects/quality-inn-sept-iles.jpg"]
+  },
+  {
+    "id": "rodeway-inn-grandfalls",
+    "name": {
+      "fr": "Rodeway Inn Grand Falls",
+      "en": "Rodeway Inn Grand Falls"
+    },
+    "description": {
+      "fr": "Restructuration des opérations et gestion des 100 chambres depuis 2018.",
+      "en": "Restructuring of operations and management of the 100 rooms since 2018."
+    },
+    "imagesSrc": ["/assets/projects/rodeway-inn-grandfalls.jpg"]
+  },
+  {
+    "id": "hotel-innutel-schefferville",
+    "name": {
+      "fr": "Hôtel Innutel Schefferville",
+      "en": "Innutel Hotel Schefferville"
+    },
+    "description": {
+      "fr": "Aggrandissement de 12 chambres à l’hôtel existant.",
+      "en": "Expansion of 12 rooms to the existing hotel."
+    },
+    "imagesSrc": ["/assets/projects/hotel-innutel-schefferville.jpg"]
+  }
+]

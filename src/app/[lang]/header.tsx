@@ -1,6 +1,6 @@
 "use client";
 
-import useWindowDimensions from "@/hooks/use-window-dimensions";
+import { useWindowDimensions } from "@/hooks/use-window-dimensions";
 import { Locale } from "@/locales";
 import Link from "next/link";
 import { useState } from "react";

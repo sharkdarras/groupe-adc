@@ -9,13 +9,13 @@ export default function Header({ lang }: { lang: Locale }) {
   const pageLabels = {
     fr: {
       services: "Services",
-      mandates: "Mandats",
+      projects: "Mandats",
       about: "À propos",
       contact: "Contact",
     },
     en: {
       services: "Services",
-      mandates: "Mandates",
+      projects: "Projects",
       about: "About",
       contact: "Contact",
     },
@@ -69,7 +69,7 @@ export default function Header({ lang }: { lang: Locale }) {
           </div>
           <nav className="flex-col items-center md:flex-row w-full flex gap-4 text-xl mt-2">
             <Link href={`/${lang}/services`}>{pageLabels[lang].services}</Link>
-            <Link href={`/${lang}/mandates`}>{pageLabels[lang].mandates}</Link>
+            <Link href={`/${lang}/projects`}>{pageLabels[lang].projects}</Link>
             <Link href={`/${lang}/about`}>{pageLabels[lang].about}</Link>
             <Link href={`/${lang}/contact`}>{pageLabels[lang].contact}</Link>
           </nav>

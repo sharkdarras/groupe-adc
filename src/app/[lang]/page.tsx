@@ -4,6 +4,10 @@ import ArrowLink from "./arrow-link";
 import ServiceBox from "./service-box";
 import { getBestProjects } from "./projects/get-best-projects";
 import ProjectBox from "./project-box";
+import ContactInfo from "./contact-info";
+import PageContent from "./page-content";
+import Block from "./block";
+import BlockTitle from "./block-title";
 
 export default async function Page({
   params,
@@ -14,7 +18,7 @@ export default async function Page({
   const projects = getBestProjects(lang);
 
   return (
-    <div>
+    <>
       <div
         style={{ backgroundImage: `url(/assets/hotel.jpeg)` }}
         className="lg:h-[750px] bg-cover bg-center wrapper relative z-0"
@@ -56,12 +60,9 @@ export default async function Page({
           </div>
         </div>
       </div>
-
-      <div className="wrapper">
-        <div className="wrapped py-20 px-8">
-          <h2 className="font-bold md:text-4xl text-3xl">
-            {texts[lang].serviceTitle}
-          </h2>
+      <PageContent>
+        <Block>
+          <BlockTitle>{texts[lang].serviceTitle}</BlockTitle>
 
           <div className="grid md:grid-cols-3 grid-cols-1 my-12 gap-4">
             <ServiceBox
@@ -81,12 +82,10 @@ export default async function Page({
           <ArrowLink href={`${lang}/services`} className="text-red">
             {texts[lang].serviceLinkLabel}
           </ArrowLink>
-        </div>
-      </div>
+        </Block>
 
-      <div className="wrapper">
-        <div className="wrapped py-16 px-10 bg-darkgray text-white">
-          <h2 className="font-bold text-4xl">{texts[lang].projectsTitle}</h2>
+        <Block className="bg-darkgray text-white">
+          <BlockTitle>{texts[lang].projectsTitle}</BlockTitle>
 
           <div className="grid md:grid-cols-3 grid-cols-1 my-12 gap-4">
             {projects.map((p) => (
@@ -105,13 +104,11 @@ export default async function Page({
               {texts[lang].projectsLinkLabel}
             </ArrowLink>
           </button>
-        </div>
-      </div>
+        </Block>
 
-      <div className="wrapper">
-        <div className="wrapped py-20 px-8 flex items-center justify-between">
+        <Block className="wrapped flex items-center justify-between">
           <div className="max-w-[38em]">
-            <h2 className="font-bold text-4xl">{texts[lang].aboutTitle}</h2>
+            <BlockTitle className="">{texts[lang].aboutTitle}</BlockTitle>
 
             <p className="mt-12 mb-4">{texts[lang].aboutP1}</p>
             <p className="mb-12">{texts[lang].aboutP2}</p>
@@ -135,9 +132,26 @@ export default async function Page({
               <h5>{texts[lang].alainTitle}</h5>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+        </Block>
+
+        <Block className=" bg-red text-white">
+          <BlockTitle className="">{texts[lang].contactTitle}</BlockTitle>
+
+          <div className="grid grid-cols-1 gap-6 mt-12">
+            <ContactInfo
+              iconSrc="/assets/icons/phone-call.svg"
+              info="418-955-5653"
+              href="tel:418-955-5653"
+            />
+            <ContactInfo
+              iconSrc="/assets/icons/email.svg"
+              info="AlainDarras@GroupeADC.com"
+              href="mailto:AlainDarras@GroupeADC.com"
+            />
+          </div>
+        </Block>
+      </PageContent>
+    </>
   );
 }
 
@@ -184,6 +198,7 @@ const texts = {
       "Reconnu pour son approche rigoureuse et son vaste réseau de professionnels, il accompagne ses clients dans le développement d’hôtels rentables et innovants, en conformité avec les normes nord-américaines et internationales.",
     aboutLinkLabel: "À propos du Groupe ADC",
     alainTitle: "Président, Groupe ADC",
+    contactTitle: "Contact",
   },
   en: {
     titleSmall: "Hospitality consultant and manager with",
@@ -226,5 +241,6 @@ const texts = {
       "Recognized for his rigorous approach and vast network of professionals, he supports his clients in the development of profitable and innovative hotels, in compliance with North American and international standards.",
     aboutLinkLabel: "About Group ADC",
     alainTitle: "President, Group ADC",
+    contactTitle: "Contact",
   },
 };

@@ -3,6 +3,7 @@ import { Kanit } from "next/font/google";
 import "./globals.css";
 import Header from "./header";
 import { Locale } from "@/locales";
+import Footer from "./footer";
 
 const kanit = Kanit({
   weight: ["200", "400", "500", "600", "700"],
@@ -46,6 +47,7 @@ export default async function RootLayout({
       <body className={`${kanit.className} text-darkgray`}>
         <Header lang={lang}></Header>
         {children}
+        <Footer lang={lang} />
       </body>
     </html>
   );

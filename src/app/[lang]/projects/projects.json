@@ -1,6 +1,6 @@
 [
   {
-    "id": "quality-inn-sept-iles",
+    "id": "quality-sept-iles",
     "name": {
       "fr": "Quality Inn Sept-Îles",
       "en": "Quality Inn Sept-Iles"
@@ -9,10 +9,59 @@
       "fr": "Construction et gestion de l’hôtel de 61 chambres ouvert en 2015.",
       "en": "Construction and management of the 61-room hotel opened in 2015."
     },
-    "imagesSrc": ["/assets/projects/quality-inn-sept-iles.jpg"]
+    "imagesSrc": [
+      "/assets/projects/quality-sept-iles/outdoor.jpg",
+      "/assets/projects/quality-sept-iles/room-1.jpg",
+      "/assets/projects/quality-sept-iles/room-2.jpg",
+      "/assets/projects/quality-sept-iles/room-3.jpg",
+      "/assets/projects/quality-sept-iles/breakfast.jpg",
+      "/assets/projects/quality-sept-iles/gym.jpg",
+      "/assets/projects/quality-sept-iles/conference-1.jpg",
+      "/assets/projects/quality-sept-iles/conference-2.jpg"
+    ],
+    "tasks": {
+      "fr": [
+        "Gestion du projet de construction",
+        "Embauche et formation du personnel",
+        "Gestion de l'établissement"
+      ],
+      "en": [
+        "Construction project management",
+        "Hiring and training staff",
+        "Facility management"
+      ]
+    },
+    "prizes": {
+      "fr": ["Prix choice 2015"],
+      "en": ["2015 Choice Awards"]
+    },
+    "stats": [
+      {
+        "label": {
+          "fr": "Nb de chambres",
+          "en": "Nb of rooms"
+        },
+        "value": "61"
+      },
+      {
+        "label": {
+          "fr": "Année d'ouverture",
+          "en": "Year opened"
+        },
+        "value": "2015"
+      },
+      {
+        "label": {
+          "fr": "En gestion depuis",
+          "en": "In management since"
+        },
+        "value": "2015"
+      }
+    ],
+    "website": "https://qualityinnsept-iles.com"
   },
   {
-    "id": "rodeway-inn-grandfalls",
+    "id": "rodeway-grandfalls",
     "name": {
       "fr": "Rodeway Inn Grand Falls",
       "en": "Rodeway Inn Grand Falls"
@@ -21,7 +70,36 @@
       "fr": "Restructuration des opérations et gestion des 100 chambres depuis 2018.",
       "en": "Restructuring of operations and management of the 100 rooms since 2018."
     },
-    "imagesSrc": ["/assets/projects/rodeway-inn-grandfalls.jpg"]
+    "imagesSrc": ["/assets/projects/rodeway-grandfalls/outdoor.jpg"],
+    "tasks": {
+      "fr": [
+        "Gestion du projet de construction",
+        "Embauche et formation du personnel",
+        "Gestion de l'établissement"
+      ],
+      "en": [
+        "Construction project management",
+        "Hiring and training staff",
+        "Facility management"
+      ]
+    },
+    "stats": [
+      {
+        "label": {
+          "fr": "Nb de chambres",
+          "en": "Nb of rooms"
+        },
+        "value": "80"
+      },
+      {
+        "label": {
+          "fr": "En gestion depuis",
+          "en": "In management since"
+        },
+        "value": "2017"
+      }
+    ],
+    "website": "https://www.rodewayinngrandfalls.com/"
   },
   {
     "id": "hotel-innutel-schefferville",
@@ -33,6 +111,48 @@
       "fr": "Aggrandissement de 12 chambres à l’hôtel existant.",
       "en": "Expansion of 12 rooms to the existing hotel."
     },
-    "imagesSrc": ["/assets/projects/hotel-innutel-schefferville.jpg"]
+    "imagesSrc": [
+      "/assets/projects/hotel-innutel-schefferville/outdoor.jpg",
+      "/assets/projects/hotel-innutel-schefferville/room-1.jpg",
+      "/assets/projects/hotel-innutel-schefferville/room-2.jpg",
+      "/assets/projects/hotel-innutel-schefferville/room-3.jpg",
+      "/assets/projects/hotel-innutel-schefferville/breakfast.jpg"
+    ],
+    "tasks": {
+      "fr": [
+        "Gestion du projet de construction",
+        "Embauche et formation du personnel",
+        "Gestion de l'établissement"
+      ],
+      "en": [
+        "Construction project management",
+        "Hiring and training staff",
+        "Facility management"
+      ]
+    },
+    "stats": [
+      {
+        "label": {
+          "fr": "Nb de chambres",
+          "en": "Nb of rooms"
+        },
+        "value": "30"
+      },
+      {
+        "label": {
+          "fr": "Année d'ouverture",
+          "en": "Year opened"
+        },
+        "value": "2012"
+      },
+      {
+        "label": {
+          "fr": "En gestion depuis",
+          "en": "In management since"
+        },
+        "value": "2022"
+      }
+    ],
+    "website": "https://hotelinnutel.com/"
   }
 ]

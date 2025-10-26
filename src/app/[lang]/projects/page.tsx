@@ -16,15 +16,10 @@ export default async function Page({
     ...getBestProjects(lang),
     ...getBestProjects(lang),
     ...getBestProjects(lang),
-
     ...getBestProjects(lang),
-
     ...getBestProjects(lang),
-
     ...getBestProjects(lang),
-
     ...getBestProjects(lang),
-
     ...getBestProjects(lang),
   ];
 

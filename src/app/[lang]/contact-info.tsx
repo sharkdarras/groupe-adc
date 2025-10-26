@@ -12,7 +12,7 @@ export default function ContactInfo({
       <div className="bg-white rounded-full p-2 md:p-3 mr-2 md:mr-4">
         <img src={iconSrc} alt={info} className="h-4 md:h-6" />
       </div>
-      <a className="text-white text-xl md:text-3xl" href={href}>
+      <a className="text-white text-lg sm:text-xl md:text-3xl" href={href}>
         {info}
       </a>
     </div>

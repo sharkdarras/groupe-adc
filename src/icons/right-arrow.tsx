@@ -1,4 +1,10 @@
-export default function RightArrow({ className }: { className?: string }) {
+export default function RightArrow({
+  className,
+  onClick,
+}: {
+  className?: string;
+  onClick?: () => void;
+}) {
   return (
     <svg
       version="1.1"
@@ -8,6 +14,7 @@ export default function RightArrow({ className }: { className?: string }) {
       y="0px"
       viewBox="0 0 512 512"
       className={className}
+      onClick={onClick}
     >
       <g>
         <g>
